@@ -1,0 +1,591 @@
+index?????
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar__content">
+
+            <div class="hover__effect">
+                <div class="hover__effect__inside">
+                </div>
+            </div>
+
+            <span class="tooltip">
+                <div class="tooltip__effect"></div><p>Dashboard</p></span>
+            <span class="hover__text">
+
+
+            <div class="arrow__icon">
+                <a href="#"><i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="bars__icon">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="list__items">
+                <li>
+                    <a href="#"><i class="fas fa-home"></i><span class="icons__text" >Home</span></a>
+            <span class="tooltip">
+                        <div class="tooltip__effect"></div><p>Dashboard</p></span>
+            <span class="hover__text">
+                            <p>Home</p>
+                    </span>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-plus"></i><span class="icons__text">Create new</span></a>
+                <span class="tooltip">
+                        <div class="tooltip__effect"></div><p>Dashboard</p></span>
+                <span class="hover__text">
+                            <p>Create</p>
+                    </span>
+            </li>
+            <li>
+                <a href="#"><i class="far fa-user-circle"></i><span class="icons__text">Profile</span></a>
+                <span class="tooltip">
+                        <div class="tooltip__effect"></div><p>Dashboard</p></span>
+                <span class="hover__text">
+                            <p>Profile</p>
+                    </span>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-paw"></i><span class="icons__text">Pets</span></a>
+                <span class="tooltip">
+                        <div class="tooltip__effect"></div><p>Dashboard</p></span>
+                <span class="hover__text">
+                            <p>Pets</p>
+                    </span>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-file-invoice"></i><span class="icons__text">Stocks</span></a>
+                <span class="tooltip">
+                        <div class="tooltip__effect"></div><p>Dashboard</p></span>
+                <span class="hover__text">
+                            <p>Stocks</p>
+                    </span>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-hand-holding-usd"></i><span class="icons__text">Finance</span></a>
+                <span class="tooltip">
+                        <div class="tooltip__effect"></div><p>Dashboard</p></span>
+                <span class="hover__text">
+                            <p>Finance</p>
+                    </span>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-cog"></i><span class="icons__text">Settings</span></a>
+                <span class="tooltip">
+                        <div class="tooltip__effect"></div><p>Dashboard</p></span>
+                <span class="hover__text">
+                            <p>Settings</p>
+                    </span>
+            </li>
+        </div>
+        <div class="account__icon">
+            <a href="#"><i class="far fa-user-circle"></i></a>
+            <div class="account__text">
+                <h5>Mukhammadali</h5>
+                <p>Admin</p>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+
+    <script src="./App.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+css////////
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+body .tooltip {
+  display: none;
+  opacity: 1;
+  position: absolute;
+  z-index: 10;
+  left: 70px;
+  top: -1em;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 10px;
+  max-width: 100%;
+  max-width: 100vh;
+  background-color: #ccc;
+  position: relative;
+}
+
+body .tooltip p {
+  top: 2em;
+  left: 1em;
+  position: absolute;
+  font-size: 16px;
+}
+
+body .tooltip .tooltip__effect {
+  margin-right: 10px;
+  margin-left: -10px;
+  border-style: solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-width: 45px 100px 45px 0;
+  border-color: transparent red transparent transparent;
+}
+
+body .tooltip .sidebar {
+  width: 5em;
+  height: 95vh;
+  border-radius: 1em;
+  margin-left: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #141418;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body .tooltip .sidebar .sidebar__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .tooltip .sidebar .sidebar__content .arrow__icon {
+  display: none;
+  font-size: 30px;
+  margin-top: 0.5em;
+  margin-right: 2em;
+}
+
+body .tooltip .sidebar .sidebar__content .bars__icon {
+  font-size: 30px;
+  margin-top: 0.5em;
+}
+
+body .tooltip .sidebar .sidebar__content .account__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+  font-size: 30px;
+  margin-top: 1em;
+}
+
+body .tooltip .sidebar .sidebar__content .account__icon .account__text {
+  display: none;
+  font-size: 14px;
+  margin-left: 1em;
+  line-height: 20px;
+  font-family: sans-serif;
+}
+
+body .tooltip .sidebar .sidebar__content .list__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 4em 0;
+  height: 50vh;
+  font-size: 20px;
+}
+
+body .tooltip .sidebar .sidebar__content .list__items li:hover a {
+  padding-left: 0.5em;
+}
+
+body .tooltip .sidebar .sidebar__content .list__items li:hover a i {
+  color: red;
+  -webkit-transform: translateY();
+          transform: translateY();
+}
+
+body .tooltip .sidebar .sidebar__content .list__items li:hover a span {
+  color: red;
+}
+
+body .tooltip .sidebar .sidebar__content .list__items li:hover .tooltip {
+  display: block;
+}
+
+body .tooltip .sidebar .sidebar__content .list__items li:hover .hover__text {
+  font-size: 30px;
+  color: red;
+  opacity: 1;
+}
+
+body .tooltip .sidebar .sidebar__content .list__items li {
+  position: relative;
+  border-radius: 1em;
+  margin: 0 15px;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+body .tooltip .sidebar .sidebar__content .list__items li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .tooltip .sidebar .sidebar__content .list__items li a .icons__text {
+  margin-left: 1em;
+  font-size: 0;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  white-space: nowrap;
+}
+
+body .tooltip .sidebar .sidebar__content .list__items li .hover__text {
+  font-size: 0;
+  position: absolute;
+  left: 135%;
+  top: 10px;
+}
+
+body .tooltip .sidebar .list__items li a:hover .hover__effect {
+  width: 100px;
+  height: 100px;
+}
+/*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+scss////////////////////////////////////////
+
+                                                                    * {
+                                                                        margin: 0;
+                                                                        padding: 0;
+                                                                        box-sizing: border-box;
+                                                                        list-style-type: none;
+                                                                        text-decoration: none;
+                                                                        color: #fff;
+                                                                    }
+                                                                    
+                                                                    body {
+                                                                        max-width: 100%;
+                                                                        max-width: 100vh;
+                                                                        background-color: #ccc;
+                                                                        position: relative;
+                                                                        .sidebar {
+                                                                            width: 5em;
+                                                                            // width: 14em;
+                                                                            height: 95vh;
+                                                                            border-radius: 1em;
+                                                                            margin-left: 3em;
+                                                                            margin-top: 1em;
+                                                                            margin-bottom: 1em;
+                                                                            background-color: rgb(20, 20, 24);
+                                                                            transition: all 0.3s ease;
+                                                                            .sidebar__content {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                justify-content: space-between;
+                                                                                align-items: center;
+                                                                                .arrow__icon {
+                                                                                    display: none;
+                                                                                    font-size: 30px;
+                                                                                    margin-top: 0.5em;
+                                                                                    margin-right: 2em;
+                                                                                }
+                                                                                .bars__icon {
+                                                                                    // display: none;
+                                                                                    font-size: 30px;
+                                                                                    margin-top: 0.5em;
+                                                                                    // margin-right: 5em;
+                                                                                }
+                                                                                .account__icon {
+                                                                                    display: flex;
+                                                                                    margin-top: 1em;
+                                                                                    font-size: 30px;
+                                                                                    margin-top: 1em;
+                                                                                    // margin-right: 0.5em;
+                                                                                    .account__text {
+                                                                                        display: none;
+                                                                                        font-size: 14px;
+                                                                                        margin-left: 1em;
+                                                                                        line-height: 20px;
+                                                                                        font-family: sans-serif;
+                                                                                    }
+                                                                                }
+                                                                                .list__items {
+                                                                                    display: flex;
+                                                                                    flex-direction: column;
+                                                                                    justify-content: space-around;
+                                                                                    width: 100%;
+                                                                                    margin: 4em 0;
+                                                                                    height: 50vh;
+                                                                                    font-size: 20px;
+                                                                                    // background-color: #fff;
+                                                                                    li:hover a {
+                                                                                        padding-left: 0.5em;
+                                                                                    }
+                                                                                    li:hover a i {
+                                                                                        color: red;
+                                                                                        transform: translateY();
+                                                                                    }
+                                                                                    li:hover a span {
+                                                                                        color: red;
+                                                                                    }
+                                                                                    li:hover .tooltip {
+                                                                                        display: block;
+                                                                                    }
+                                                                                    li:hover .hover__text {
+                                                                                        font-size: 30px;
+                                                                                        color: red;
+                                                                                        opacity: 1;
+                                                                                    }
+                                                                                    li {
+                                                                                        // left: 3em;
+                                                                                        position: relative;
+                                                                                        border-radius: 1em;
+                                                                                        margin: 0 15px;
+                                                                                        padding: 15px 15px;
+                                                                                        cursor: pointer;
+                                                                                        a {
+                                                                                            display: flex;
+                                                                                            .icons__text {
+                                                                                                margin-left: 1em;
+                                                                                                font-size: 0;
+                                                                                                transition: all 0.1s linear;
+                                                                                                white-space: nowrap;
+                                                                                            }
+                                                                                        }
+                                                                                        .hover__text {
+                                                                                            font-size: 0;
+                                                                                            position: absolute;
+                                                                                            left: 135%;
+                                                                                            top: 10px;
+                                                                                        }
+                                                                                        .tooltip {
+                                                                                            display: none;
+                                                                                            opacity: 1;
+                                                                                            position: absolute;
+                                                                                            z-index: 10;
+                                                                                            left: 70px;
+                                                                                            top: -1em;
+                                                                                            width: 100px;
+                                                                                            height: 100px;
+                                                                                            background-color: red;
+                                                                                            border-radius: 10px;
+                                                                                            p {
+                                                                                                top: 2em;
+                                                                                                left: 1em;
+                                                                                                position: absolute;
+                                                                                                font-size: 16px;
+                                                                                            }
+                                                                                            .tooltip__effect {
+                                                                                                margin-right: 10px;
+                                                                                                margin-left: -10px;
+                                                                                                border-style: solid;
+                                                                                                margin-top: 5px;
+                                                                                                margin-bottom: 5px;
+                                                                                                border-width: 45px 100px 45px 0;
+                                                                                                border-color: transparent red transparent transparent;
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                .list__items li a:hover .hover__effect {
+                                                                                    width: 100px;
+                                                                                    height: 100px;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+
+
+                                                                    
+javascript//////////////////
+const barsBtn = document.querySelector(".bars__icon");
+const arrowBtn = document.querySelector(".arrow__icon");
+const sideBar = document.querySelector(".sidebar");
+const iconText = document.querySelectorAll(".sidebar .sidebar__content .list__items li a .icons__text");
+const tooltip = document.querySelectorAll(".tooltip");
+const hoverText = document.querySelectorAll(".hover__text");
+const accText = document.querySelector(".account__text");
+const allIcons = document.querySelectorAll(".sidebar .sidebar__content .list__items li a i");
+// const closeBtn = document.querySelector(".close__btn");
+// const accordian = document.querySelector(".accordian");
+// const accBtn = document.querySelector(".acc__click");
+// const accSpan = document.querySelector(".text");
+
+
+// const sideBar = document.querySelector(".sidebar");
+// const openBtn = document.querySelector("#hamburger__menu");
+// let items = document.querySelector(".items");
+// let closeBtn2 = document.querySelector("#cancel");
+
+
+barsBtn.addEventListener("click", open1);
+
+function open1() {
+    accText.style.display = `block`;
+    arrowBtn.style.display = "block";
+    barsBtn.style.display = "none";
+    sideBar.style.width = "14em";
+    iconText.forEach((e) => {
+        e.style.fontSize = `20px`;
+    });
+    tooltip.forEach((e) => {
+        e.style.opacity = `0`;
+    });
+    hoverText.forEach((e) => {
+        e.style.opacity = `1`;
+    });
+
+
+
+}
+allIcons.forEach((icon) => {
+    icon.addEventListener('mouseover', (e) => {
+        const resultTool = e.target.clientY;
+        tooltip.style.translateY = resultTool
+    });
+});
+arrowBtn.addEventListener("click", close);
+
+function close() {
+    accText.style.display = `none`;
+    sideBar.style.width = "5em";
+    arrowBtn.style.display = "none";
+    barsBtn.style.display = "block";
+    barsBtn.style.display = "block";
+    iconText.forEach((e) => {
+        e.style.fontSize = `0`;
+    });
+    tooltip.forEach((e) => {
+        e.style.opacity = `1`;
+    })
+    hoverText.forEach((e) => {
+        e.style.opacity = `0`;
+    });
+
+}
+
+
+
+
+
+// barsBtn.addEventListener("click", () => {
+//     if (!clicked) {
+//         clicked = true;
+//         barsBtn.innerHTML = ` <i class="fas fa-arrow-left"></i> `;
+//         // arrowBtn.style.display = "block";
+//         // barsBtn.style.display = "none";
+//     } else {
+//         clicked = false;
+//         barsBtn.innerHTML = ` <i class="fas fa-bars"></i> `;
+//         // arrowBtn.style.display = "none";
+//         // barsBtn.style.display = "block";
+
+//     }
+// });
+
+
+
+
+
+
+
+
+// let clicked = false;
+
+
+
+
+// likeBtn.addEventListener("click", () => {
+//     if (!clicked) {
+//         clicked = true;
+//         likeIcon.innerHTML = ` <i class="fas fa-thumbs-up "></i>`
+//         count.textContent++;
+//     } else {
+//         clicked = false;
+//         likeIcon.innerHTML = ` <i class="far fa-thumbs-up "></i>`;
+//         count.textContent--;
+//     }
+// });
+// dislikeBtn.addEventListener("click", () => {
+//     if (!clicked) {
+//         clicked = true;
+//         dislikeIcon.innerHTML = ` <i class="fas fa-thumbs-down "></i>`
+//         count2.textContent++;
+//     } else {
+//         clicked = false;
+//         dislikeIcon.innerHTML = ` <i class="far fa-thumbs-down "></i>`;
+//         count2.textContent--;
+//     }
+// });
+
+
+
+
+// openBtn.addEventListener("click", open);
+
+// function open() {
+//     // sideBar.style.width = "250px"
+//     items.style.display = "block";
+//     closeBtn2.style.right = "0";
+//     openBtn.style.left = "-50px";
+//     sideBar.classList.add("activeSidebar")
+//     backHover.style.width = "100%";
+// }
+// closeBtn2.addEventListener("click", close2);
+
+// function close2() {
+//     backHover.style.width = "0";
+//     openBtn.style.left = "0";
+//     // sideBar.style.width = "0";
+//     items.style.display = "block";
+//     closeBtn2.style.right = "-40px";
+//     sideBar.classList.remove("activeSidebar")
+//         // closeBtn2.classList.add("cancelActive");
+// }                                                                    

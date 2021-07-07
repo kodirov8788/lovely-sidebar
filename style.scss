@@ -1,0 +1,140 @@
+                                                                    * {
+                                                                        margin: 0;
+                                                                        padding: 0;
+                                                                        box-sizing: border-box;
+                                                                        list-style-type: none;
+                                                                        text-decoration: none;
+                                                                        color: #fff;
+                                                                    }
+                                                                    
+                                                                    body {
+                                                                        max-width: 100%;
+                                                                        max-width: 100vh;
+                                                                        background-color: #ccc;
+                                                                        position: relative;
+                                                                        .sidebar {
+                                                                            width: 5em;
+                                                                            // width: 14em;
+                                                                            height: 95vh;
+                                                                            border-radius: 1em;
+                                                                            margin-left: 3em;
+                                                                            margin-top: 1em;
+                                                                            margin-bottom: 1em;
+                                                                            background-color: rgb(20, 20, 24);
+                                                                            transition: all 0.3s ease;
+                                                                            .sidebar__content {
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                justify-content: space-between;
+                                                                                align-items: center;
+                                                                                .arrow__icon {
+                                                                                    display: none;
+                                                                                    font-size: 30px;
+                                                                                    margin-top: 0.5em;
+                                                                                    margin-right: 2em;
+                                                                                }
+                                                                                .bars__icon {
+                                                                                    // display: none;
+                                                                                    font-size: 30px;
+                                                                                    margin-top: 0.5em;
+                                                                                    // margin-right: 5em;
+                                                                                }
+                                                                                .account__icon {
+                                                                                    display: flex;
+                                                                                    margin-top: 1em;
+                                                                                    font-size: 30px;
+                                                                                    margin-top: 1em;
+                                                                                    // margin-right: 0.5em;
+                                                                                    .account__text {
+                                                                                        display: none;
+                                                                                        font-size: 14px;
+                                                                                        margin-left: 1em;
+                                                                                        line-height: 20px;
+                                                                                        font-family: sans-serif;
+                                                                                    }
+                                                                                }
+                                                                                .list__items {
+                                                                                    display: flex;
+                                                                                    flex-direction: column;
+                                                                                    justify-content: space-around;
+                                                                                    width: 100%;
+                                                                                    margin: 4em 0;
+                                                                                    height: 50vh;
+                                                                                    font-size: 20px;
+                                                                                    // background-color: #fff;
+                                                                                    li:hover a {
+                                                                                        padding-left: 0.5em;
+                                                                                    }
+                                                                                    li:hover a i {
+                                                                                        color: red;
+                                                                                        transform: translateY();
+                                                                                    }
+                                                                                    li:hover a span {
+                                                                                        color: red;
+                                                                                    }
+                                                                                    li:hover .tooltip {
+                                                                                        display: block;
+                                                                                    }
+                                                                                    li:hover .hover__text {
+                                                                                        font-size: 30px;
+                                                                                        color: red;
+                                                                                        opacity: 1;
+                                                                                    }
+                                                                                    li {
+                                                                                        // left: 3em;
+                                                                                        position: relative;
+                                                                                        border-radius: 1em;
+                                                                                        margin: 0 15px;
+                                                                                        padding: 15px 15px;
+                                                                                        cursor: pointer;
+                                                                                        a {
+                                                                                            display: flex;
+                                                                                            .icons__text {
+                                                                                                margin-left: 1em;
+                                                                                                font-size: 0;
+                                                                                                transition: all 0.1s linear;
+                                                                                                white-space: nowrap;
+                                                                                            }
+                                                                                        }
+                                                                                        .hover__text {
+                                                                                            font-size: 0;
+                                                                                            position: absolute;
+                                                                                            left: 135%;
+                                                                                            top: 10px;
+                                                                                        }
+                                                                                        .tooltip {
+                                                                                            display: none;
+                                                                                            opacity: 1;
+                                                                                            position: absolute;
+                                                                                            z-index: 10;
+                                                                                            left: 70px;
+                                                                                            top: -1em;
+                                                                                            width: 100px;
+                                                                                            height: 100px;
+                                                                                            background-color: red;
+                                                                                            border-radius: 10px;
+                                                                                            p {
+                                                                                                top: 2em;
+                                                                                                left: 1em;
+                                                                                                position: absolute;
+                                                                                                font-size: 16px;
+                                                                                            }
+                                                                                            .tooltip__effect {
+                                                                                                margin-right: 10px;
+                                                                                                margin-left: -10px;
+                                                                                                border-style: solid;
+                                                                                                margin-top: 5px;
+                                                                                                margin-bottom: 5px;
+                                                                                                border-width: 45px 100px 45px 0;
+                                                                                                border-color: transparent red transparent transparent;
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                                .list__items li a:hover .hover__effect {
+                                                                                    width: 100px;
+                                                                                    height: 100px;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
